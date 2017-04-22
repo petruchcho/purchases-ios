@@ -14,6 +14,7 @@
 		CE84F48B1EAB24960004CF0F /* stuff2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE84F4891EAB24960004CF0F /* stuff2.xcdatamodeld */; };
 		CE84F48D1EAB24960004CF0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE84F48C1EAB24960004CF0F /* Assets.xcassets */; };
 		CE84F4901EAB24960004CF0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE84F48E1EAB24960004CF0F /* LaunchScreen.storyboard */; };
+		CE84F4991EAB37890004CF0F /* AddPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE84F4981EAB37890004CF0F /* AddPurchaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		CE84F48C1EAB24960004CF0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE84F48F1EAB24960004CF0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE84F4911EAB24960004CF0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE84F4971EAB37890004CF0F /* AddPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPurchaseViewController.h; sourceTree = "<group>"; };
+		CE84F4981EAB37890004CF0F /* AddPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPurchaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				CE84F4911EAB24960004CF0F /* Info.plist */,
 				CE84F4891EAB24960004CF0F /* stuff2.xcdatamodeld */,
 				CE84F47D1EAB24960004CF0F /* Supporting Files */,
+				CE84F4971EAB37890004CF0F /* AddPurchaseViewController.h */,
+				CE84F4981EAB37890004CF0F /* AddPurchaseViewController.m */,
 			);
 			path = stuff2;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			files = (
 				CE84F4851EAB24960004CF0F /* ViewController.m in Sources */,
 				CE84F48B1EAB24960004CF0F /* stuff2.xcdatamodeld in Sources */,
+				CE84F4991EAB37890004CF0F /* AddPurchaseViewController.m in Sources */,
 				CE84F4821EAB24960004CF0F /* AppDelegate.m in Sources */,
 				CE84F47F1EAB24960004CF0F /* main.m in Sources */,
 			);

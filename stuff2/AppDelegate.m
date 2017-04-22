@@ -16,9 +16,40 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    if (![self countTypeInitialized]) {
+        NSLog(@"Init countType");
+        [self insertCountType:@"items"];
+        [self insertCountType:@"kg."];
+        [self insertCountType:@"gr."];
+        [self insertCountType:@"l."];
+    } else {
+        NSLog(@"Inited countType");
+    }
+    
     return YES;
 }
+
+- (void)insertCountType: (NSString *) withName {
+    NSManagedObject *obj = [NSEntityDescription insertNewObjectForEntityForName:@"CountType"
+                                                        inManagedObjectContext:self.persistentContainer.viewContext];
+    [obj setValue:withName forKey:@"name"];
+    [self saveContext];
+}
+
+- (BOOL)countTypeInitialized {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"CountType"
+                                              inManagedObjectContext:self.persistentContainer.viewContext];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    NSArray *fetchedObjects = [self.persistentContainer.viewContext executeFetchRequest:fetchRequest error:&error];
+    if ([fetchedObjects count] == 0) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
